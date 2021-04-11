@@ -1,0 +1,111 @@
+//main: ../style.less
+@media (max-width: 991px) {
+    header, header.sticky {
+        padding: 10px 20px;
+    }
+    header .navigation {
+        display: none;
+        & li {
+            margin-left: 0;
+            & a {
+                color: #111;
+                font-size: 1.6em;
+                &:hover {
+                    font-size: 1.7em;
+                    color: #ff0157;
+                }
+        
+            }
+        }
+        &.active {
+            width: 100%;
+            height: calc(100% - 68px);
+            position: fixed;
+            top: 68px;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background:#fff;
+        }
+    }
+   
+ 
+  
+   
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(images/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        &.active {
+            background: url(images/close.png);
+            background-size: 25px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+   
+    header.sticky .menuToggle {
+        filter: invert(1);
+    }
+    section {
+        padding: 20px;
+    }
+    .banner .content h2 {
+        font-size: 3em;
+        color: #fff;
+    }
+    .row {
+        flex-direction: column;
+        & .col50 {
+            position: relative;
+            width: 100%;
+            & .imgBx {
+                height: 300px;
+                margin-top: 20px;
+            }
+        }
+    }
+   
+  
+    .menu .content {
+        margin-top: 20px;
+        & .box {
+            margin: 10px;
+            & .imgBx {
+                height: 260px; 
+            }
+        }
+    }
+    
+    
+    .title {
+        text-align: center;
+    }
+    .titleText {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    .testimonials .content .box { 
+        margin: 10px;
+        padding: 20px;
+    }
+    .contactForm {
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+} 
+@media (max-width: 480px) {
+    .banner .content p {
+        padding-top: 10px;
+    }
+}

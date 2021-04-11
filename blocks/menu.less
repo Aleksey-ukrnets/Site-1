@@ -1,0 +1,50 @@
+//main: ../style.less
+/* section menu */
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu .content {
+    display: flex;
+    justify-content: center;
+    flex-direction:row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    & .box {
+        width: 340px;
+        margin: 20px;
+        border: 15px solid #fff;
+        border-radius: 20px;
+        box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+        & .text {
+            padding: 15px 0 5px;
+            & h3 {
+                font-weight: 400;
+                color: #111;
+            }
+        }
+        & .imgBx {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            & img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        
+        }
+    }
+}
+
+
+
+
+
+/* section menu end */
